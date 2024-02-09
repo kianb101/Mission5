@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Calculator";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p class="lead"> You can calculate the cost of rock climbing lessons. Enter how many hours of lessons you need to find your total cost.</p>
+
+<div>
+    <label for="hoursInput">Enter the number of hours you need:</label>
+    <input type="number" id="hoursInput" min="0">
+    <span id="hoursError" class="text-danger"></span>
+</div>
+
+<br />
+
+<div>
+    <label for="chargePerHour">Charge per hour:</label>
+    <input type="text" id="chargePerHour" value="150" readonly>
+</div>
+
+<br />
+
+<div>
+    <button id="calculateTotal">Calculate Total</button>
+</div>
+
+<br />
+
+<div>
+    <label for="totalOutput">Total:</label>
+    <input type="text" id="totalOutput" readonly>
+</div>
+
+<p>All values are in USD</p>
