@@ -5,6 +5,7 @@
 
 <p class="lead"> You can calculate the cost of rock climbing lessons. Enter how many hours of lessons you need to find your total cost.</p>
 
+@* Get hours of lessons wanted *@
 <div>
     <label for="hoursInput">Enter the number of hours you need:</label>
     <input type="number" id="hoursInput" min="0">
@@ -12,20 +13,20 @@
 </div>
 
 <br />
-
+@* Show charge per hour *@
 <div>
     <label for="chargePerHour">Charge per hour:</label>
     <input type="text" id="chargePerHour" value="150" readonly>
 </div>
 
 <br />
-
+@* Add button to calculate total *@
 <div>
     <button id="calculateTotal">Calculate Total</button>
 </div>
 
 <br />
-
+@* show the output for total *@
 <div>
     <label for="totalOutput">Total:</label>
     <input type="text" id="totalOutput" readonly>
